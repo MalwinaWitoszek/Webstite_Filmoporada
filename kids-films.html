@@ -1,0 +1,213 @@
+
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Lista najlepszych filmów dla dzieci | Propozycje bajek dla małych i dużych</title>
+    <meta name="description" content="Oto lista najlepszych filmów dla małych dzieci, bajek dla starszych, propozycje na kino familijne, najciekawsze filmy, pomysły na film i bajkę, dla rodziny">
+    <meta name="keywords" content="zestawienie, lista bajek, kino familijne bajki dla dzieci, najlepsze filmy, epoka lodowcowa, peppa, shrek, bożonarodzeniowe">
+	<meta name="author" content="Manislawa">
+    <link rel="stylesheet" href="css/reset.css">  
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+    <link rel="shortcut icon" href="images/iconVideocam.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Rubik&amp;subset=latin-ext">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Chelsea+Market&amp;subset=latin-ext">
+
+    <style>
+        h2   {   text-align: center;  }
+    </style>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>   
+    
+</head>
+<body onload="sortList()"> 
+        <!-- Page title -->
+   <header id="bigTitle">
+       <i class="material-icons"><a href="index.html">&#xE04B;</a></i>
+       <h1>Lista filmów i bajek <br> dla całej rodziny!</h1>     
+   </header>
+       <!-- Left panel -->
+   <div id="mainHeader" class="clearfix">    
+       <aside id="leftBar">
+           
+            <a href="index.html">
+               <div id="logo">
+                   <div >
+                       <p>www</p>
+                   </div>
+                   <div >
+                       <p>FilmoPorada</p>
+                   </div>
+                   <div >
+                       <p>.pl</p>
+                   </div>
+               </div>
+           </a>
+
+           <nav id="sideNav">
+               <p> Kategorie filmów</p>
+               <div id="accordionNav"> 
+                   <h6 class="accHeader"> 
+                       Familijne 
+                   </h6>                                               
+                   <ul class="accContent"> 
+                       <li><a href='family-films.html'>filmy</a></li> 
+                       <li><a href='galery.html#familyGalery'>galeria</a></li> 
+                   </ul> 
+
+                   <h6 class="accHeader"> 
+                       Dla Maluchów 
+                   </h6>                                               
+                   <ul class="accContent"> 
+                       <li><a href='kids-films.html'>filmy</a></li> 
+                       <li><a href='galery.html#kidsGalery'>galeria</a></li> 
+                   </ul> 
+
+                   <h6 class="accHeader"> 
+                           Dla Starszaków 
+                   </h6>                                               
+                   <ul class="accContent"> 
+                       <li><a href='senior-children-films.html'>filmy</a></li> 
+                       <li><a href='galery.html#seniorChildrenGalery'>galeria</a></li> 
+                   </ul> 
+
+                   <h6 class="accHeader"> 
+                       Specjalne okazje 
+                   </h6>                                               
+                   <ul class="accContent"> 
+                       <li><a href='special-occasions-films.html#christmasFilms'>Bozonarodzeniowe</a></li> 
+                       <li><a href='special-occasions-films.html#danceFilms'>taneczne</a></li> 
+                       <li><a href='special-occasions-films.html#easterFilms'>wielkanocne</a></li>
+                   </ul> 
+               </div>
+           </nav>
+   
+           <aside id="quotation">
+               <p id="citation">
+                   <q>Kto powiedział że musimy dorosnąć?</q> 
+                   <cite>Walt Disney</cite>
+               </p>
+           </aside>
+       </aside> 
+           <!-- Sticky Menu -->           
+       <nav id="topMenu">
+           <a href="#" class="menu-icon"><i class="material-icons">&#xE5D2;</i></a> 
+           <ul id="dropDownMenu" class="menu clearfix">
+               <li>
+                   <i class="material-icons"><a href="index.html">&#xE88A;</a></i>
+               </li>
+               <li>
+                   <a href="#">Kategorie</a>
+                   <ul> 
+                       <li><a href='family-films.html'>Familijne</a></li> 
+                       <li><a href='kids-films.html'>Dla Maluchów</a></li>
+                       <li><a href='senior-children-films.html'>Dla Starszaków</a></li> 
+                       <li><a href='special-occasions-films.html'>Specjalne okazje</a></li>  
+                   </ul> 
+               </li>
+               <li>
+                   <a href="galery.html">Galeria</a>
+               </li>
+               <li>
+                   <a href="contact.html">Kontakt</a>
+               </li>
+           </ul>
+       </nav>
+   </div>
+        <!-- Main content -->
+   <main>
+        <article id="oneCategory" class="blockOfCategory">
+            <h2>Filmy dla maluchów</h2>            
+                
+                <section id="mamiFatale" class="oneFilm">                                    
+                    <div class="clearfix">
+                        <img class="filmPoster" src="images/mami-fatale_small.jpg" alt="plakat Mami Fatale" >
+                        <header class="filmTitle">
+                                <h3>Mami Fatale</h3><small>(2012-)</small>
+                        </header>            
+                        <p class="filmDescription">
+                            Est tempora voluptatum iusto repudiandae possimus perferendis non sint   Lorem ipsum dolor, sit amitbis quis molestias. Est tempora voluptatum iusto repudiandae possimus perferendis non sint dolor, aliquam cupiditate omnis aliquid laborum dolores.Lorem ipsum dolor, sit amet . Est tempora voluptatum iusto repudiandae possimus perferendis non sint dolor, aliquam cupiditate omnis aliquid laborum dolores.Lorem ipsum dolor, sit amet 
+                        </p>
+                    </div>
+                    <div class="filmTrailer">                     
+                        <iframe src="https://www.youtube.com/embed/0-pYNgg0LCs?rel=0" allowfullscreen></iframe>
+                        <small>
+                            Źródło: Youtube
+                        </small>
+                    
+                    </div>
+                </section>
+                
+                <section id="dobranocnyOgrod" class="oneFilm">                                            
+                    <div class="clearfix">                   
+                        <img class="filmPoster" src="images/dobranocny-ogrod_small.jpg" alt="plakat Dobranocny Ogród" >                        
+                        <header class="filmTitle">
+                                <h3>Dobranocny ogród</h3><small>(2007-)</small>
+                        </header>            
+                        <p class="filmDescription">
+                                Est tempora voluptatum iusto repudiandae possimus perferendis non sint   Lorem ipsum dolor, sit amitbis quis molestias. Est tempora voluptatum iusto repudiandae possimus perferendis non sint dolor, aliquam cupiditate omnis aliquid laborum dolores.Lorem ipsum dolor, sit amet . Est tempora voluptatum iusto repudiandae possimus perferendis non sint dolor, aliquam cupiditate omnis aliquid laborum dolores.Lorem ipsum dolor, sit amet 
+                        </p>           
+                    </div>
+                    <div class="filmTrailer">    
+                        <iframe src="https://www.youtube.com/embed/pqcju1SMe24?rel=0" allowfullscreen></iframe>
+                        <small>
+                            Źródło: Youtube
+                        </small>
+                    </div>
+                </section>     
+                
+                <section id="madryMaluch" class="oneFilm">                                           
+                    <div class="clearfix">
+                        <img class="filmPoster" src="images/madry-maluch_small.jpg" alt="plakat Mądry Maluch" >
+                        <header class="filmTitle">
+                                <h3>Mądry Maluch</h3><small>(2002-2003)</small>
+                        </header>            
+                        <p class="filmDescription">
+                            Est tempora voluptatum iusto repudiandae possimus perferendis non sint   Lorem ipsum dolor, sit amitbis quis molestias. Est tempora voluptatum iusto repudiandae possimus perferendis non sint dolor, aliquam cupiditate omnis aliquid laborum dolores.Lorem ipsum dolor, sit amet . Est tempora voluptatum iusto repudiandae possimus perferendis non sint dolor, aliquam cupiditate omnis aliquid laborum dolores.Lorem ipsum dolor, sit amet 
+                        </p>
+                    </div>
+                    <div class="filmTrailer">    
+                        <iframe src="https://www.youtube.com/embed/d_NNqvmtt2k?rel=0" allowfullscreen></iframe>
+                        <small>
+                            Źródło: Youtube
+                        </small>
+                    </div>
+                </section>                              
+        </article>
+
+        <nav id="extraNavbar">
+            <p>Spis filmów </p>
+            <ul id="sortList">
+                <li><a href="special-occasions-films.html#OpowiescWigilijnaMiki">Opowieść wigilijna Myszki Miki</a></li>
+                <li><a href="special-occasions-films.html#wKrzywymZwierciadle">W krzywym zwierciadle, Witaj święty Mikołaju</a></li>
+                <li><a href="special-occasions-films.html#mammaMia">Mamma Mia</a></li>
+                <li><a href="special-occasions-films.html#boogieBeebies">Boogie Beebies</a></li>
+                <li><a href="special-occasions-films.html#hop">Hop</a></li>
+                <li><a href="kids-films.html#madryMaluch">Mądry maluch</a></li>
+                <li><a href="kids-films.html#mamiFatale">Mami Fatale</a></li>
+                <li><a href="kids-films.html#dobranocnyOgrod">Dobranocny ogród</a></li>
+                <li><a href="family-films.html#paniDoubtfire">Pani Doubtfire</a></li>
+                <li><a href="family-films.html#niania">Niania</a></li>
+                <li><a href="senior-children-films.html#ksiegaZycia">Ksiega Życia</a></li>
+                <li><a href="senior-children-films.html#malyKsiaze">Mały Książe</a></li>
+                <li><a href="senior-children-films.html#przygodaWparyzu">Przygoda w Paryżu</a></li>
+                <li><a href="senior-children-films.html#vaiana">Vaiana Skarb Oceanu</a></li>
+                <li><a href="senior-children-films.html#kubo">Kubo i dwie struny</a></li>
+            </ul>
+        </nav>
+    </main>
+
+    <footer id="mainFooter" class="footer">
+        Copyright &copy; 2017 by Manislawa
+    </footer>
+   
+    <script src="js/sortscript.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
