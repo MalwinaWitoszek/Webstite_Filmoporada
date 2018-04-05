@@ -19,10 +19,19 @@
 
     <style>
      /*for phones*/
+        #extraNavbar   {  display: none;   }
+        main>article    { width: calc(100vw - 23vw - 5px);
+                            max-width: 1200px; } 
         @media all and (max-width: 700px)
         {   main>article
-            {   padding-left: 30px;
+            {   width: 100vw;
+                padding-left: 30px;
                 padding-right: 30px; } }
+        @media all and (min-width: 701px) and (max-width: 990px)
+        {   main>article
+            {   width: calc(100vw - 215px); } }
+
+                
     </style>
 
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
@@ -34,7 +43,7 @@
          <!-- Page title -->
     <header id="bigTitle">
         <i class="material-icons"><a href="index.html">&#xE04B;</a></i>
-        <h1>Lista filmów i bajek <br> dla całej rodziny!</h1>     
+        <h1>Lista filmów i bajek <br> dla całej rodziny</h1>     
     </header>
         <!-- Left panel -->
     <div id="mainHeader" class="clearfix">    
@@ -42,15 +51,9 @@
 
             <a href="index.html">
                 <div id="logo">
-                    <div >
-                        <p>www</p>
-                    </div>
-                    <div >
-                        <p>FilmoPorada</p>
-                    </div>
-                    <div >
-                        <p>.pl</p>
-                    </div>
+                    <p>
+                        www<span>FilmoPorada</span>.pl
+                    </p>
                 </div>
             </a>
 
@@ -104,7 +107,7 @@
             <a href="#" class="menu-icon"><i class="material-icons">&#xE5D2;</i></a>
             <ul id="dropDownMenu" class="menu clearfix">
                 <li>
-                    <i class="material-icons"><a href="index.html">&#xE88A;</a></i>
+                    <i class="material-icons"><a href="index.html">&#xE88A;</a></i>   
                 </li>
                 <li>
                     <a href="#">Kategorie</a>
@@ -180,13 +183,13 @@
         
         function carousel() {
             var i;
-            var x = document.getElementsByClassName("slideShow");
-            for (i = 0; i < x.length; i++) {
-            x[i].style.display = "none";
+            var slides = document.getElementsByClassName("slideShow");
+            for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
             }
             myIndex++;
-            if (myIndex > x.length) {myIndex = 1}
-            x[myIndex-1].style.display = "block";
+            if (myIndex > slides.length) {myIndex = 1}
+            slides[myIndex-1].style.display = "block";
             setTimeout(carousel, 4000);
         }
     </script>

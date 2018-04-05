@@ -1,11 +1,11 @@
 /* sticky top navigation */
  
-        window.onscroll = function() {myFunction()};
+        window.onscroll = function() {stickyNav()};
         
         var navbar = document.getElementById("mainHeader");
         var sticky = navbar.offsetTop;
         
-        function myFunction() {
+        function stickyNav() {
           if (window.pageYOffset >= sticky) {
             navbar.classList.add("sticky")
           } else {
@@ -16,9 +16,8 @@
 /* aside accordion navigation*/
 
         var acc = document.getElementsByClassName("accHeader");
-        var i;
-        
-        for (i = 0; i < acc.length; i++) {
+
+        for (var i = 0, max = acc.length; i < max; i++) {
           acc[i].addEventListener("click", function() {
             this.classList.toggle("active");
             var content = this.nextElementSibling;

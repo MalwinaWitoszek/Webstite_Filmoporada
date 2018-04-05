@@ -25,15 +25,18 @@
         h3      {   display: block;
                     padding-top: 10px;  }
         div.thumbnail    {  text-align: center;   }
-        .thumbnail img   {  height: 300px;   }
+        v
         .blockOfCategory {  padding-top: 30px;
                             box-shadow: 0 10px 15px -13px #B3B0B0 inset; 
                             margin-left: 20px;
                             margin-right: 20px }
         .tz-gallery     {   padding-bottom: 20px;   }
-        @media all and (min-width: 1350px)
-        {   #extraNavbar    {  display: none; }
-            main>article {width: calc(100vw - 210px - 26px); }  }
+        main>article    { width: calc(100vw - 23vw - 55px); } 
+        @media all and (max-width: 700px)
+        { main>article    { width: 100vw;}  }
+        @media all and (max-width: 575px)
+        { .thumbnail img   {  height: auto;   } 
+            img { width: 50vw;} }
     </style>
         
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
@@ -45,25 +48,19 @@
         <!-- Page title -->
    <header id="bigTitle">
        <i class="material-icons"><a href="index.html">&#xE04B;</a></i>
-       <h1>Lista filmów i bajek <br> dla całej rodziny!</h1>     
+       <h1>Lista filmów i bajek <br> dla całej rodziny</h1>     
    </header>
        <!-- Left panel -->
    <div id="mainHeader" class="clearfix">    
        <aside id="leftBar">
 
-           <a href="index.html">
-               <div id="logo">
-                   <div >
-                       <p>www</p>
-                   </div>
-                   <div >
-                       <p>FilmoPorada</p>
-                   </div>
-                   <div >
-                       <p>.pl</p>
-                   </div>
-               </div>
-           </a>
+            <a href="index.html">
+                <div id="logo">
+                    <p>
+                        www<span>FilmoPorada</span>.pl
+                    </p>
+                </div>
+            </a>
 
            <nav id="sideNav">
                <p> Kategorie filmów</p>
@@ -112,12 +109,12 @@
        </aside> 
            <!-- Sticky Menu -->           
        <nav id="topMenu">
-           <a href="#" class="menu-icon"><i class="material-icons">&#xE5D2;</i></a>
-           <ul id="dropDownMenu" class="menu clearfix">
-               <li>
-                   <i class="material-icons"><a href="index.html">&#xE88A;</a></i>
-               </li>
-               <li>
+            <a href="#" class="menu-icon"><i class="material-icons">&#xE5D2;</i></a>
+            <ul id="dropDownMenu" class="menu clearfix">
+                <li>
+                    <i class="material-icons"><a href="index.html">&#xE88A;</a></i>   
+                </li>
+                <li>
                    <a href="#">Kategorie</a>
                    <ul> 
                        <li><a href='family-films.html'>Familijne</a></li> 
@@ -329,26 +326,7 @@
                 </section>                     
         </article>
 
-        <nav id="extraNavbar">
-            <p>Spis filmów </p>
-            <ul id="sortList">
-                <li><a href="special-occasions-films.html#OpowiescWigilijnaMiki">Opowieść wigilijna Myszki Miki</a></li>
-                <li><a href="special-occasions-films.html#wKrzywymZwierciadle">W krzywym zwierciadle, Witaj święty Mikołaju</a></li>
-                <li><a href="special-occasions-films.html#mammaMia">Mamma Mia</a></li>
-                <li><a href="special-occasions-films.html#boogieBeebies">Boogie Beebies</a></li>
-                <li><a href="special-occasions-films.html#hop">Hop</a></li>
-                <li><a href="kids-films.html#madryMaluch">Mądry maluch</a></li>
-                <li><a href="kids-films.html#mamiFatale">Mami Fatale</a></li>
-                <li><a href="kids-films.html#dobranocnyOgrod">Dobranocny ogród</a></li>
-                <li><a href="family-films.html#paniDoubtfire">Pani Doubtfire</a></li>
-                <li><a href="family-films.html#niania">Niania</a></li>
-                <li><a href="senior-children-films.html#ksiegaZycia">Ksiega Życia</a></li>
-                <li><a href="senior-children-films.html#malyKsiaze">Mały Książe</a></li>
-                <li><a href="senior-children-films.html#przygodaWparyzu">Przygoda w Paryżu</a></li>
-                <li><a href="senior-children-films.html#vaiana">Vaiana Skarb Oceanu</a></li>
-                <li><a href="senior-children-films.html#kubo">Kubo i dwie struny</a></li>
-            </ul>
-        </nav>
+        
     </main>
 
     <footer id="mainFooter" class="footer">

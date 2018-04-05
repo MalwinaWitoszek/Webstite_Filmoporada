@@ -40,8 +40,8 @@ h1
     margin: 0;
     display: block;
     padding-top:0.85em;  
-    width: calc(100vw - 200px);
-    margin-left: 200px;    
+    width: calc(100vw - 19vw);
+    margin-left: 19vw;    
 }
 h2
 {
@@ -81,7 +81,8 @@ h3
     margin: 0;
     padding: 0;
     float: left;
-    width: 200px;
+    width: 19vw;
+    min-width: 220px;
     padding-top: 15px;
     color: white; 
     height: inherit;
@@ -97,62 +98,41 @@ h3
  /* logo*/
 #logo
 {
-    width: 200px;
+    width: 19vw;
+    min-width: 220px;
     height: 40px;
     background-color: #263F93; 
+    color: #FFD2E3;
     font-weight: bold;
 } 
-/* vertical and horizontal centering */
+ /* vertical and horizontal centering  */
 #logo div
 {
     position: relative;       
 }
-#logo>:first-child>p, #logo>:nth-child(2)>p
+#logo>p 
 {
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);  
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
     letter-spacing: 0.1rem;
 }
-#logo>:nth-child(3)>p 
+ /*end od centering*/
+#logo span
 {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%); 
-}    
-/*end od centering*/
-#logo>:first-child
-{
-    width: 25%;
-    height: inherit;
-    float: left;
-    color: #FFD2E3;  
-    text-align: right;
-    letter-spacing: 0.1rem;
-}
-#logo>:nth-child(2)
-{
-    width: 56%;
-    height: inherit;
-    float: left;
     color: white;
     font-size: 1.05rem;
-    letter-spacing: 0.1rem;
-}
-#logo>:nth-child(3)
-{
-    width:19%;
-    height: inherit;
-    float: left;
-    color: #FFD2E3;
-    letter-spacing: 0.1rem;
+    letter-spacing: 0.16rem;
+    margin: 0 0.3rem;
 }
 /* dropdown top menu*/
 #topMenu
 {
     height: 40px;
-    width: calc(100% - 200px);
+    width: calc(100% - 19vw);
+    max-width: calc(100% - 220px);
     float: left;
     background-color: #8c0829;
 }
@@ -162,17 +142,17 @@ h3
 }
 #dropDownMenu
 {
-    width: 400px;
+    width: 500px;
     background-color: #8c0829;
     height: inherit;
-    float: right;
+    margin: 0 auto;
 }
 #dropDownMenu  i
 {
     margin: 0;
     float: left;
     font-size: 22px;
-    padding-top: 18%;
+    padding-top: 15%;
     height: inherit;
     width: 100%;
 }
@@ -272,9 +252,10 @@ h3
 /*side accordion navigation */ 
 #sideNav                
 {
-    background-color: #8D9FDD;
-    width: 200px;
-    height: 420px;
+    background-color: #DFDFDF;
+    width: 19vw;
+    min-width: 220px;
+    min-height: 420px;
     position: absolute;
     top: 40px;
     left: 0;
@@ -286,10 +267,13 @@ h3
     font-family: 'Chelsea Market', cursive;
     letter-spacing: 0.03rem;
     color: #263F93;
+    padding-left: 1.7vw;
+    text-align: left;
 }
 #accordionNav 
 {
-    width: 160px;
+    width: 19vw;
+    min-width: 220px;
     margin: 0 auto;
 }
 .accHeader 
@@ -297,7 +281,7 @@ h3
     color: #263F93;
     font-weight: 700;
     cursor: pointer;
-    padding: 7px;
+    padding: 7px 1.7vw;
     margin: 0;
     position: relative;
     text-align: left;  
@@ -305,8 +289,8 @@ h3
 }
 .accContent 
 {
-    padding: 0 18px;
-    background-color: #9FAFE1;
+    padding: 0 2vw;
+    background-color: #EFEFEF;
     max-height: 0;
     margin: 0;
     text-align: left;
@@ -315,30 +299,11 @@ h3
 } 
 .active, .accHeader:hover 
 {
-    background-color: #9FAFE1;
-}
-.accHeader:after 
-{
-    content: '\003E';
-    color: #263F93;
-    font-weight: bold;
-    float: right;
-    margin-left: 5px;
-}
-.active:after 
-{
-    content: "\003C";
-    display: block ;
-    position: absolute;
-    width: 12px;
-    height: 100%;
-    top: 0;
-    right: 0;
-    padding-top: 4px;
+    background-color: #EFEFEF;
 }
 .accContent li
 {
-    padding-bottom: 0.15rem;
+    padding-bottom: 0.25rem;
 }
 .accContent a
 {   
@@ -353,7 +318,8 @@ h3
 /* unnecessary addition */
 #quotation
 {
-    width: 200px;
+    width: 19vw;
+    min-width: 220px;
     height: 120px ;
     position: absolute;
     top: 460px;
@@ -390,8 +356,8 @@ main
 {
     min-height: 540px;
     width: 100vw;
-    margin-left: 210px; 
-    margin-right: 26px;
+    margin-left: 23vw; 
+    margin-right: 35px;
     background-color: white;
     zoom:1; /* clearfix for IE < 8 */
 }
@@ -401,8 +367,6 @@ main
     width: 14vw;
     height: auto;
     float: left;
-    /*left: calc(100vw - 12px - 12vw );
-    /*full view - scrollbar width - extraNavbar width*/
     margin-top: 25px;
     background-color: white;
 } 
@@ -435,8 +399,7 @@ main
 /* content */
 main>article
 {   
-    width: calc(100vw - 210px - 26px - 14vw);
-    /*full view - (leftBar width +10px) -(scrollbar width +10px) - extraNavbar */
+    width: calc(100vw - 23vw - 35px - 14vw);
     float: left;
     background-color: white;
     text-align: justify; 
@@ -456,7 +419,7 @@ main>article>p
 /* film proposition */
 .oneFilm
 {
-    margin: 30px 70px 40px 25px;
+    margin: 30px 50px 40px 25px;
     box-shadow: 0 10px 15px -13px #B3B0B0 inset;
 }
 .oneFilm > div
@@ -478,7 +441,11 @@ main>article>p
 {
     padding: 5px 80px 0 150px; 
 }
-
+.tz-gallery
+{
+    padding-left: 0;
+    padding-right: 0; 
+}
 .filmTrailer > :first-child, .filmTrailer > small
 {
    display: block;
@@ -501,14 +468,14 @@ main>article>p
     padding: 7px 40px 15px 35px;
 }
 .slideShow
-{
+{   
     width: 35vw;
     margin: 0 auto;
 }
 /* contact form */
 .container-fluid
 {
-    box-shadow: 0 0 11px#0 #DFDDDD inset;
+    box-shadow: 0 0 11px #DFDDDD inset;
     padding: 15px 20px 30px 40px;
 }
 .form-control 
@@ -534,11 +501,10 @@ main>article>p
 {
     color: #777575;
     width: 100vw;
-    height: 3vh;
-    min-height: 20px;
+    min-height: 24px;
     clear: both;
     font-size: 13px;
-    box-shadow: 0 0 11px#0 #B3B0B0 inset;
+    box-shadow: 0 0 11px #B3B0B0 inset;
 }
 
             /* MEDIA RULES BREAKPOINTS 
@@ -553,7 +519,7 @@ main>article>p
     #extraNavbar
     {  display: none; }
     main>article
-    {  width: calc(100vw - 210px - 26px); }  
+    {  width: calc(100vw - 23vw - 35px); }  
 }
 
             /*tablets portrait*/
@@ -564,10 +530,10 @@ main>article>p
     iframe
     {   height: 400px;  }
     h1
-    {   width: calc(100vw - 160px);
+    {   width: calc(100vw - 200px);
         padding-top: 1.8rem;
-        margin-left:  160px;
-        font-size: 1.55rem;}
+        margin-left:  200px;
+        font-size: 1.48rem;}
     h2
     {   font-size: 1.5rem;
         letter-spacing: 0.09rem;
@@ -576,48 +542,56 @@ main>article>p
     {   font-size: 1.2rem;  }
     #extraNavbar
     {   display: none; } 
+    #logo span
+    {   letter-spacing: 0.1rem;  }
     #logo
-    {   width: 160px;
+    {   width: 200px;
+        min-width: 200px;
         height: 32px; }
-    #logo>:first-child>p, #logo>:nth-child(2)>p
-    {   letter-spacing: normal;   }
     #bigTitle
     {   height: 85px;
         letter-spacing: 0.1rem;   }
     #bigTitle > i
-    {   width: 160px;
+    {   width: 200px;
+        min-width: 200px;
         padding: 0;
         margin: 0;  }
     #bigTitle > i >a
     {   font-size: 80%; }      
     #topMenu
-    {   width: calc(100% - 160px); 
+    {   max-width: calc(100% - 200px);
         height: 32px; }
     #dropDownMenu
-    {   width: 360px; }
+    {   width: 400px; }
     #dropDownMenu  i
     {   font-size: 20px;
-        padding-top: 12%;  }
+        padding-top: 11%;  }
     #dropDownMenu > li > a
-    {   padding: 6px 0;  }
+    {   padding: 4px 0;  }
     #dropDownMenu > li > ul > li > a 
     {   padding:7px;  }
     .sticky + main 
     {   padding-top: 46px;  }
     main 
-    {   margin-left: 170px; }
+    {   margin-left: 225px; }
     main>article
-    {   width: calc(100vw - 170px - 26px);
+    {   width: calc(100vw - 215px - 35px);
         padding: 15px 15px;  } 
     #sideNav                    
-    {   width: 160px;
-        height: 380px;
+    {   width: 200px;
+        min-width: 200px;
+        min-height: 380px;
         top: 32px;  }
+    #accordionNav 
+    {   min-width: 200px;   }
     #quotation
-    {   width: 160px; 
+    {   width: 200px;
+        min-width: 200px;
         top: 412px;   }
     #mainFooter
     {   font-size: 12px;   }
+    .oneFilm
+    {   margin-right: 30px  }
     .filmPoster
     {   width: 120px; 
         margin-right: 30px;}
@@ -634,23 +608,26 @@ main>article>p
     iframe
     {   height: 260px;  }
     h1
-    {   font-size: 1.4rem;
-        margin-left: 0;
-        width: 100vw;
-        line-height: 1.5  }
+    {   font-size: 1.3rem;
+        margin: 0 20px;
+        padding: 20px 0;
+        width: auto;
+        line-height: 1.5;
+        text-align: center;  }
     br
     {   display: inline;  }
     #leftBar
     {   float: none;   }
     #topMenu
     {   width: auto;
-        float: none;   }
+        float: none;  
+        max-width: none; }
     #topMenu .menu-icon
     {   height: 40px ;
         color: #263F93;
         display: inline-block;
         width: 40px;
-        background-color: #8D9FDD;  }
+        background-color: #DFDFDF;  }
     #topMenu .menu-icon i
     {   padding: 7px;    }     
     #dropDownMenu 
@@ -663,8 +640,9 @@ main>article>p
     {   display: block;
         height: 40px;
         clear: both;
+        padding-top: .6%;
         width: 100%;
-        box-shadow:0 -4px 4px -4px #AAA;   }
+        box-shadow:0 4px 4px -4px #AAA;   }
     #dropDownMenu > li:nth-child(2)
     {   height: auto;   }
     #dropDownMenu > li:nth-child(2) > a
@@ -674,9 +652,8 @@ main>article>p
     #dropDownMenu > li > ul
     {   visibility:visible ;
         transform: none;
-        position: relative;  }   
-    #dropDownMenu > li > ul > li 
-    {   box-shadow: 0 -4px 4px -4px #AAA;   }
+        -webkit-transform: none;
+        position: relative;  }  
     #dropDownMenu  i
     {   font-size: 20px;
         padding-top: 6px;
@@ -690,27 +667,26 @@ main>article>p
         color: white; 
         background-color: #8c0829;   }
     #dropDownMenu > li:hover > ul
-    {   transform: none;  }
+    {   transform: none;
+        -webkit-transform: none;  }
     #dropDownMenu > li:hover > a
     {   box-shadow: none;   }
     #dropDownMenu > li > ul > li:hover > a 
     {   background-color:#8A263F;   }
     #logo
-    {   float: left;
+    {   float:left;
+        position: relative;
         width: calc(100vw - 40px);
-        height: 40px;
+        min-width: calc(100vw - 40px);
         padding-left: 25px;   }
-    #logo>:first-child
-    {   width: 60px ;
-        height: inherit;
-        float: left;
-        color: #FFD2E3;  
-        text-align: right;
-        letter-spacing: 0.1rem;  }
-    #logo>:nth-child(2)
-    {   width: 110px;  }
-    #logo>:nth-child(3)
-    {   padding-left: 10px;   }
+    #logo>p
+    {
+    position: absolute;
+    top: 50%;
+    left: 30px;
+    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%); }
+    
     #slider
     {   float: none;
         padding: 0;   }
@@ -718,7 +694,7 @@ main>article>p
     {   width: 100vw;
         margin-bottom: 30px;  }
     #bigTitle
-    {   height: 120px;   }
+    {   height: auto;   }
     #bigTitle > i
     {   display: none;  }
     #bigTitle > i >a
@@ -730,14 +706,14 @@ main>article>p
         margin-right: 0;  }
     main>article
     {   width: 100vw;
-        padding: 25px 0 10px 0;
-        float: none;  } 
+        float: none;
+        padding: 15px 0;  } 
     main>article>div>p
     {   padding-right: 0;
         margin-top: 20px;  } 
     .blockOfCategory
-    {   padding-left: 20px;
-        padding-right: 20px   }
+    {   margin-left: 0;
+        margin-right: 0; }
     .oneFilm
     {   margin: 30px 20px 40px 20px;   }
     .oneFilm > div
@@ -745,7 +721,7 @@ main>article>p
     .filmPoster 
     {   display: none;}  
     .filmDescription
-    {   padding: 5px 20px 0 20px;  }
+    {   padding: 5px 30px 0 30px;  }
     .filmTitle
     {   padding: 0 20px 0 20px;  }
     .filmTitle > small
@@ -754,20 +730,19 @@ main>article>p
         text-align: center;  } 
     .filmTrailer > :first-child, .filmTrailer > small
     {   display: block;
-        padding: 20px 20px 0 20px;  }
+        padding: 20px 30px 0 30px;  }
     #oneCategory
     {   padding: 20px 0;    }
     h2
-    {   padding-bottom: 5px;
-        padding-left: 20px;
-        padding-right: 20px;  
-        font-size: 1.3rem;
+    {   padding: 0 30px 5px 30px;
+        font-size: 1.1rem;
         letter-spacing: 0.09rem;
-        line-height: 1.4;  }
+        line-height: 1.4; 
+        text-align: center; }
     h3
     {   display: block;
         padding-bottom: 0; 
-        font-size: 1.2rem;   }
+        font-size: 1rem;   }
     .filmTrailer > small
     {   padding-top: 0;  }
     .tz-gallery 
@@ -788,4 +763,10 @@ main>article>p
     .col-md-4 
     {   flex: 0 0 50%;
         max-width: 50%;  }
+}
+@media all and (min-width: 1450px) 
+{  /* for photo gallery */
+    .col-md-4 
+    {   flex: 0 0 25%;
+        max-width: 25%;  }
 }
