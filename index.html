@@ -1,6 +1,6 @@
-
 <!DOCTYPE html>
 <html lang="pl">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,9 +8,10 @@
     <title>Lista najlepszych filmów dla dzieci | Propozycje bajek dla małych i dużych</title>
     <meta name="description" content="Oto lista najlepszych filmów dla małych dzieci, bajek dla starszych, propozycje na kino familijne, najciekawsze filmy, pomysły na film i bajkę, dla rodziny">
     <meta name="keywords" content="zestawienie, lista bajek, kino familijne bajki dla dzieci, najlepsze filmy, epoka lodowcowa, peppa, shrek, bożonarodzeniowe">
-	<meta name="author" content="Manislawa">
-    <link rel="stylesheet" href="css/reset.css">  
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+    <meta name="author" content="Manislawa">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb"
+        crossorigin="anonymous">
     <link rel="shortcut icon" href="images/iconVideocam.ico" type="image/x-icon">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
@@ -18,105 +19,83 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Chelsea+Market&amp;subset=latin-ext">
 
     <style>
-     /*for phones*/
-        #extraNavbar   {  display: none;   }
-        main>article    { width: calc(100vw - 23vw - 5px);
-                            max-width: 1200px; } 
-        @media all and (max-width: 700px)
-        {   main>article
-            {   width: 100vw;
-                padding-left: 30px;
-                padding-right: 30px; } }
-        @media all and (min-width: 701px) and (max-width: 990px)
-        {   main>article
-            {   width: calc(100vw - 215px); } }
+        /*for phones*/
 
-                
+        #extraNavbar {
+            display: none;
+        }
+
+
+        @media all and (max-width: 700px) {
+            main>section {
+                width: 100vw;
+                padding-left: 30px;
+                padding-right: 30px;
+            }
+        }
+
+        @media all and (min-width: 701px) and (max-width: 990px) {
+            main>section {
+                width: calc(100vw - 215px);
+            }
+        }
     </style>
 
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>   
-    
-</head>
-<body onload="sortList()"> 
-         <!-- Page title -->
-    <header id="bigTitle">
-        <i class="material-icons"><a href="index.html">&#xE04B;</a></i>
-        <h1>Lista filmów i bajek <br> dla całej rodziny</h1>     
-    </header>
-        <!-- Left panel -->
-    <div id="mainHeader" class="clearfix">    
-        <aside id="leftBar">
+    <script async src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script async src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh"
+        crossorigin="anonymous"></script>
+    <script async src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ"
+        crossorigin="anonymous"></script>
 
-            <a href="index.html">
-                <div id="logo">
-                    <p>
-                        www<span>FilmoPorada</span>.pl
-                    </p>
-                </div>
+
+</head>
+
+<body onload="sortList()">
+    <div>
+        <!-- Page title -->
+        <header id="bigTitle" class="flexContainer">
+            <h1 class="centering">
+                Lista filmów i bajek dla całej rodziny
+            </h1>
+            <i class="material-icons">
+                <a href="index.html">&#xE04B;</a>
+            </i>
+        </header>
+
+        <!-- Sticky Menu -->
+        <nav id="topMenu" class="flexContainer">
+
+            <!-- Logo -->
+            <a id="logo" href="index.html" >
+                <p class="centering">
+                www<span>FilmoPorada</span>.pl
+                </p>
             </a>
 
-            <nav id="sideNav">
-                <p> Kategorie filmów</p>
-                <div id="accordionNav"> 
-                    <h6 class="accHeader"> 
-                        Familijne 
-                    </h6>                                               
-                    <ul class="accContent"> 
-                        <li><a href='family-films.html'>filmy</a></li> 
-                        <li><a href='galery.html#familyGalery'>galeria</a></li> 
-                    </ul> 
-
-                    <h6 class="accHeader"> 
-                        Dla Maluchów 
-                    </h6>                                               
-                    <ul class="accContent"> 
-                        <li><a href='kids-films.html'>filmy</a></li> 
-                        <li><a href='galery.html#kidsGalery'>galeria</a></li> 
-                    </ul> 
-
-                    <h6 class="accHeader"> 
-                            Dla Starszakow 
-                    </h6>                                               
-                    <ul class="accContent"> 
-                        <li><a href='senior-children-films.html'>filmy</a></li> 
-                        <li><a href='galery.html#seniorChildrenGalery'>galeria</a></li> 
-                    </ul> 
-
-                    <h6 class="accHeader"> 
-                        Specjalne okazje 
-                    </h6>                                               
-                    <ul class="accContent"> 
-                        <li><a href='special-occasions-films.html#christmasFilms'>Bozonarodzeniowe</a></li> 
-                        <li><a href='special-occasions-films.html#danceFilms'>taneczne</a></li> 
-                        <li><a href='special-occasions-films.html#easterFilms'>wielkanocne</a></li>
-                    </ul> 
-                </div>
-            </nav>
-    
-            <aside id="quotation">
-                <p id="citation">
-                    <q>Kto powiedział że musimy dorosnąć?</q> 
-                    <cite>Walt Disney</cite>
-                </p>
-            </aside>
-        </aside> 
-            <!-- Sticky Menu -->           
-        <nav id="topMenu">
-            <a href="#" class="menu-icon"><i class="material-icons">&#xE5D2;</i></a>
-            <ul id="dropDownMenu" class="menu clearfix">
+            <!-- Dropdown Menu -->
+            <ul id="dropDownMenu" class="flexContainer">
                 <li>
-                    <i class="material-icons"><a href="index.html">&#xE88A;</a></i>   
+                    <i class="material-icons">
+                        <a href="index.html">&#xE88A;</a>
+                    </i>
                 </li>
                 <li>
                     <a href="#">Kategorie</a>
-                    <ul> 
-                        <li><a href='family-films.html'>Familijne</a></li> 
-                        <li><a href='kids-films.html'>Dla Maluchów</a></li>
-                        <li><a href='senior-children-films.html'>Dla Starszaków</a></li> 
-                        <li><a href='special-occasions-films.html'>Specjalne okazje</a></li>  
-                    </ul> 
+                    <ul>
+                        <li>
+                            <a href='family-films.html'>Familijne</a>
+                        </li>
+                        <li>
+                            <a href='kids-films.html'>Dla Maluchów</a>
+                        </li>
+                        <li>
+                            <a href='senior-children-films.html'>Dla Starszaków</a>
+                        </li>
+                        <li>
+                            <a href='special-occasions-films.html'>Specjalne okazje</a>
+                        </li>
+                    </ul>
                 </li>
                 <li>
                     <a href="galery.html">Galeria</a>
@@ -125,73 +104,191 @@
                     <a href="contact.html">Kontakt</a>
                 </li>
             </ul>
+            <!-- Menu phone icon -->
+            <a href="#" class="menu-icon">
+                <i class="material-icons">&#xE5D2;</i>
+            </a>
         </nav>
-    </div>
-         <!-- Main content -->
-    <main> 
-        <article>
-            <h2>Najlepsze bajki dla dzieci</h2>         
-            <div >    
-                 <p>
-                    Szukasz inspiracji na kino dla dzieci? A moze po prostu masz wrażenie że widziłeś już wszystko i nie masz pomysłu na naprawdę ciekawą bajkę?
-                </p>
-                <section id="slider">   <!-- Slide Show -->
+
+        <!-- Main content -->
+        <main class="flexContainer">
+            <!-- Content section  -->
+            <section id="content">
+                <header>
+                    <h2>Najlepsze bajki dla dzieci</h2>
+                    <p>
+                        Szukasz inspiracji na kino dla dzieci? A moze po prostu masz wrażenie że widziłeś już wszystko i nie masz pomysłu na naprawdę
+                        ciekawą bajkę?
+                    </p>
+                </header>
+
+                <!-- Slide Show -->
+                <div id="slider">
                     <img class="slideShow" src="images/slide-show1.jpg" alt="kadr z bajki księga życia">
-                    <img class="slideShow" src="images/slide-show2.jpg" alt="kadr z bajki mały książe">       
+                    <img class="slideShow" src="images/slide-show2.jpg" alt="kadr z bajki mały książe">
                     <img class="slideShow" src="images/slide-show3.jpg" alt="kadr z bajki przygoda w paryżu">
                     <img class="slideShow" src="images/slide-show4.jpg" alt="kadr z bajki król lew">
-                </section>
+                </div>
+
+                <!-- Introduction -->
                 <p>
-                    Tutaj znajdziesz <strong> propozycje bajek dla dzieci i filmow dla rodziny </strong>. Lorem ipsum dolor, sit amitbis quis molestias. Est tempora voluptatum iusto repudiandae possimus perferendis non sint dolor, aliquam cupiditate omnis aliquid laborum dolores.Lorem ipsum dolor, sit amet 
+                    Tutaj znajdziesz
+                    <strong> propozycje bajek dla dzieci i filmow dla rodziny </strong>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus
+                     ultricies molestie imperdiet. Integer ut diam lacinia risus sodales
+                     semper ac faucibus ante. In eu libero urna. Donec eu gravida arcu.
+                     Quisque ante sapien, interdum ut tempor id, ultrices sit amet metus.
+                     Suspendisse ac erat et quam ullamcorper imperdiet in id turpis.
+                     Nunc in suscipit felis. Praesent nisl risus, semper at rhoncus eu,
+                     ornare quis nulla. Integer eleifend ullamcorper nibh, id tristique
+                     enim ultricies a. Mauris sodales sem id fermentum venenatis.
+                     Aliquam id metus blandit augue imperdiet ultrices. Etiam posuere,
+                     ex non varius vulputate, lacus ex pharetra lectus, non laoreet sapien.
                 </p>
-            </div>
-        </article>
+            </section>
 
-        <nav id="extraNavbar">
-            <p>Spis filmów </p>
-            <ul id="sortList">
-                <li><a href="special-occasions-films.html#OpowiescWigilijnaMiki">Opowieść wigilijna Myszki Miki</a></li>
-                <li><a href="special-occasions-films.html#wKrzywymZwierciadle">W krzywym zwierciadle, Witaj święty Mikołaju</a></li>
-                <li><a href="special-occasions-films.html#mammaMia">Mamma Mia</a></li>
-                <li><a href="special-occasions-films.html#boogieBeebies">Boogie Beebies</a></li>
-                <li><a href="special-occasions-films.html#hop">Hop</a></li>
-                <li><a href="kids-films.html#madryMaluch">Mądry maluch</a></li>
-                <li><a href="kids-films.html#mamiFatale">Mami Fatale</a></li>
-                <li><a href="kids-films.html#dobranocnyOgrod">Dobranocny ogród</a></li>
-                <li><a href="family-films.html#paniDoubtfire">Pani Doubtfire</a></li>
-                <li><a href="family-films.html#niania">Niania</a></li>
-                <li><a href="senior-children-films.html#ksiegaZycia">Ksiega Życia</a></li>
-                <li><a href="senior-children-films.html#malyKsiaze">Mały Książe</a></li>
-                <li><a href="senior-children-films.html#przygodaWparyzu">Przygoda w Paryżu</a></li>
-                <li><a href="senior-children-films.html#vaiana">Vaiana Skarb Oceanu</a></li>
-                <li><a href="senior-children-films.html#kubo">Kubo i dwie struny</a></li>
-            </ul>
-        </nav>
-    </main>
+            <!-- Left navigation panel -->
+            <section id="sideNav">
+                <h3> Kategorie filmów</h3>
+                <nav id="accordionNav">
+                    <h6 class="accHeader">
+                        Familijne
+                    </h6>
+                    <ul class="accContent">
+                        <li>
+                            <a href='family-films.html'>filmy</a>
+                        </li>
+                        <li>
+                            <a href='galery.html#familyGalery'>galeria</a>
+                        </li>
+                    </ul>
 
-    <footer id="mainFooter" class="footer">
-        Copyright &copy; 2017 by Manislawa
-    </footer>
+                    <h6 class="accHeader">
+                        Dla Maluchów
+                    </h6>
+                    <ul class="accContent">
+                        <li>
+                            <a href='kids-films.html'>filmy</a>
+                        </li>
+                        <li>
+                            <a href='galery.html#kidsGalery'>galeria</a>
+                        </li>
+                    </ul>
 
+                    <h6 class="accHeader">
+                        Dla Starszakow
+                    </h6>
+                    <ul class="accContent">
+                        <li>
+                            <a href='senior-children-films.html'>filmy</a>
+                        </li>
+                        <li>
+                            <a href='galery.html#seniorChildrenGalery'>galeria</a>
+                        </li>
+                    </ul>
+
+                    <h6 class="accHeader">
+                        Specjalne okazje
+                    </h6>
+                    <ul class="accContent">
+                        <li>
+                            <a href='special-occasions-films.html#christmasFilms'>Bozonarodzeniowe</a>
+                        </li>
+                        <li>
+                            <a href='special-occasions-films.html#danceFilms'>taneczne</a>
+                        </li>
+                        <li>
+                            <a href='special-occasions-films.html#easterFilms'>wielkanocne</a>
+                        </li>
+                    </ul>
+                </nav>
+                <!-- Extra citation  -->
+                <aside id="quotation">
+                    <!-- <p id="citation"> -->
+                    <q>Kto powiedział że musimy dorosnąć?</q>
+                    <cite>Walt Disney</cite>
+                    <!-- </p> -->
+                </aside>
+            </section>
+
+            <!-- Extra right side navigation for large desktop only-->
+            <nav id="extraNavbar">
+                <h3>Spis filmów </h3>
+                <ul id="sortList">
+                    <li>
+                        <a href="special-occasions-films.html#OpowiescWigilijnaMiki">Opowieść wigilijna Myszki Miki</a>
+                    </li>
+                    <li>
+                        <a href="special-occasions-films.html#wKrzywymZwierciadle">W krzywym zwierciadle, Witaj święty Mikołaju</a>
+                    </li>
+                    <li>
+                        <a href="special-occasions-films.html#mammaMia">Mamma Mia</a>
+                    </li>
+                    <li>
+                        <a href="special-occasions-films.html#boogieBeebies">Boogie Beebies</a>
+                    </li>
+                    <li>
+                        <a href="special-occasions-films.html#hop">Hop</a>
+                    </li>
+                    <li>
+                        <a href="kids-films.html#madryMaluch">Mądry maluch</a>
+                    </li>
+                    <li>
+                        <a href="kids-films.html#mamiFatale">Mami Fatale</a>
+                    </li>
+                    <li>
+                        <a href="kids-films.html#dobranocnyOgrod">Dobranocny ogród</a>
+                    </li>
+                    <li>
+                        <a href="family-films.html#paniDoubtfire">Pani Doubtfire</a>
+                    </li>
+                    <li>
+                        <a href="family-films.html#niania">Niania</a>
+                    </li>
+                    <li>
+                        <a href="senior-children-films.html#ksiegaZycia">Ksiega Życia</a>
+                    </li>
+                    <li>
+                        <a href="senior-children-films.html#malyKsiaze">Mały Książe</a>
+                    </li>
+                    <li>
+                        <a href="senior-children-films.html#przygodaWparyzu">Przygoda w Paryżu</a>
+                    </li>
+                    <li>
+                        <a href="senior-children-films.html#vaiana">Vaiana Skarb Oceanu</a>
+                    </li>
+                    <li>
+                        <a href="senior-children-films.html#kubo">Kubo i dwie struny</a>
+                    </li>
+                </ul>
+            </nav>
+        </main>
+
+        <!-- Bottom Footer -->
+        <footer id="mainFooter" class="footer">
+            Copyright &copy; 2017 by Manislawa
+        </footer>
+    </div>
     <script src="js/sortscript.js"></script>
     <script src="js/script.js"></script>
-    
+
     <!--  Automatic Slideshow - change image every 4 seconds -->
     <script>
         var myIndex = 0;
         carousel();
-        
+
         function carousel() {
             var i;
             var slides = document.getElementsByClassName("slideShow");
             for (i = 0; i < slides.length; i++) {
-            slides[i].style.display = "none";
+                slides[i].style.display = "none";
             }
             myIndex++;
-            if (myIndex > slides.length) {myIndex = 1}
-            slides[myIndex-1].style.display = "block";
+            if (myIndex > slides.length) { myIndex = 1 }
+            slides[myIndex - 1].style.display = "block";
             setTimeout(carousel, 4000);
         }
     </script>
 </body>
+
 </html>
