@@ -1,17 +1,20 @@
 /* sticky top navigation */
+        var navbar = document.getElementById("topMenu");
+        var leftbar = document.getElementById("sideNav");
+        var topPos = navbar.offsetTop;
+
+        function stickyNav() {
+          if (window.pageYOffset >= topPos) {
+            navbar.classList.add("stickyTopMenu");
+            leftbar.classList.add("stickyLeftNav");
+          } else {
+            navbar.classList.remove("stickyTopMenu")
+            leftbar.classList.remove("stickyLeftNav")
+          }
+        }
 
         window.onscroll = function() {stickyNav()};
 
-        var navbar = document.getElementById("topMenu");
-        var sticky = navbar.offsetTop;
-
-        function stickyNav() {
-          if (window.pageYOffset >= sticky) {
-            navbar.classList.add("sticky")
-          } else {
-            navbar.classList.remove("sticky")
-          }
-        }
 
 /* aside accordion navigation*/
 
@@ -31,9 +34,9 @@
 
 /* Show/Hide menu hamburger */
 
-        var button = document.getElementsByClassName("menu-icon")[0];
+        var buttonHamburger = document.getElementsByClassName("menu-icon")[0];
 
-        button.onclick = function() {
+        buttonHamburger.onclick = function() {
             document.getElementsByClassName("menu")[0].classList.toggle("show");
             return false;
     }

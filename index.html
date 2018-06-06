@@ -52,36 +52,36 @@
 </head>
 
 <body onload="sortList()">
-    <div>
-        <!-- Page title -->
+        <!-- PAGE TITLE -->
         <header id="bigTitle" class="flexContainer">
             <h1 class="centering">
-                Lista filmów i bajek dla całej rodziny
+                Lista filmów i bajek <br> dla rodziny
             </h1>
-            <i class="material-icons">
-                <a href="index.html">&#xE04B;</a>
-            </i>
+            <div>
+                <i class="material-icons">
+                    <a href="index.html">&#xE04B;</a>
+                </i>
+            </div>
         </header>
 
-        <!-- Sticky Menu -->
+        <!-- STICKY MENU -->
         <nav id="topMenu" class="flexContainer">
-
             <!-- Logo -->
-            <a id="logo" href="index.html" >
+            <a id="logo" href="index.html" class="centering" >
                 <p class="centering">
                 www<span>FilmoPorada</span>.pl
                 </p>
             </a>
 
             <!-- Dropdown Menu -->
-            <ul id="dropDownMenu" class="flexContainer">
+            <ul id="dropDownMenu" class="menu flexContainer">
                 <li>
                     <i class="material-icons">
                         <a href="index.html">&#xE88A;</a>
                     </i>
                 </li>
                 <li>
-                    <a href="#">Kategorie</a>
+                    <a class="centering" href="#">Kategorie</a>
                     <ul>
                         <li>
                             <a href='family-films.html'>Familijne</a>
@@ -98,19 +98,19 @@
                     </ul>
                 </li>
                 <li>
-                    <a href="galery.html">Galeria</a>
+                    <a class="centering" href="galery.html">Galeria</a>
                 </li>
                 <li>
-                    <a href="contact.html">Kontakt</a>
+                    <a class="centering" href="contact.html">Kontakt</a>
                 </li>
             </ul>
             <!-- Menu phone icon -->
-            <a href="#" class="menu-icon">
+            <a href="#" class="centering menu-icon">
                 <i class="material-icons">&#xE5D2;</i>
             </a>
         </nav>
 
-        <!-- Main content -->
+        <!-- MAIN CONTENT -->
         <main class="flexContainer">
             <!-- Content section  -->
             <section id="content">
@@ -147,7 +147,7 @@
                 </p>
             </section>
 
-            <!-- Left navigation panel -->
+            <!-- Sticky Left navigation panel -->
             <section id="sideNav">
                 <h3> Kategorie filmów</h3>
                 <nav id="accordionNav">
@@ -204,7 +204,7 @@
                 </nav>
                 <!-- Extra citation  -->
                 <aside id="quotation">
-                    <!-- <p id="citation"> -->
+                     <!-- <p id="citation"> -->
                     <q>Kto powiedział że musimy dorosnąć?</q>
                     <cite>Walt Disney</cite>
                     <!-- </p> -->
@@ -264,11 +264,10 @@
             </nav>
         </main>
 
-        <!-- Bottom Footer -->
+        <!-- BOTTOM FOOTER -->
         <footer id="mainFooter" class="footer">
             Copyright &copy; 2017 by Manislawa
         </footer>
-    </div>
     <script src="js/sortscript.js"></script>
     <script src="js/script.js"></script>
 
