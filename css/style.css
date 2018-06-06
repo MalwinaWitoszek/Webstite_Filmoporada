@@ -303,9 +303,7 @@ main {
   padding: 3rem 4rem;
   /* margin-top: 10px; */
 }
-#content header {
-  /* margin-bottom: 3rem; */
-}
+
 #content.introduction p
 /* main>article>div>p */
  {
@@ -606,17 +604,7 @@ color: #8c0829;
   .stickyTopMenu + main {
     padding-top: 46px;
   }
-  main
-    /* {   margin-left: 225px; } */
-    #content
-    /* {   width: calc(100vw - 215px - 35px); */
- {
-    /* margin-left: 200px;
-    padding: 2rem 3rem;
-  }
-  #content.introduction p {
-    /* padding-right: 3rem; */
-  }
+
   #sideNav {
     width: 200px;
     /* min-width: 200px; */
