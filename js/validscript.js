@@ -6,11 +6,11 @@ $(document).ready(function () {
     $('#all').on('click', function(){
         var checkboxes = $('#form').find('.check');
         if (this.checked) {
-            checkboxes.attr('checked', 'true'); 
-        } 
+            checkboxes.attr('checked', 'true');
+        }
         else {
-            checkboxes.attr('checked', 'false'); 
-        };  
+            checkboxes.attr('checked', 'false');
+        };
     });
 
     // validation script
@@ -41,15 +41,5 @@ $(document).ready(function () {
                alert( "Formularz został przesłany");}
             else{
                 alert( "Formularz NIE został przesłany, uzupełnij pola wymagane");}
-            });       
+            });
     });
-
-
-
-//     e.preventDefault();
-//     if(form.valid() === true) {
-//        alert( "Formularz został przesłany");}
-//     else{
-//         alert( "Formularz NIE został przesłany, uzupełnij pola wymagane");}
-//     });       
-// });

@@ -7,23 +7,23 @@ html, body, div, span, applet, object, iframe, p, blockquote, pre, a, abbr, acro
     vertical-align:baseline;
     text-decoration: none;
   }
-  
+
   article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
     display:block;
   }
-  
+
   body {
     line-height:1;
   }
-  
+
   ul, ol {
     list-style:none;
   }
-  
+
   blockquote, q {
     quotes:none;
   }
-  
+
   blockquote:before, blockquote:after, q:before, q:after {
     content:'';
     content:none;

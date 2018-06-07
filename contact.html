@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pl">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,218 +8,269 @@
     <title>Lista najlepszych filmów dla dzieci | Propozycje bajek dla małych i dużych</title>
     <meta name="description" content="Oto lista najlepszych filmów dla małych dzieci, bajek dla starszych, propozycje na kino familijne, najciekawsze filmy, pomysły na film i bajkę, dla rodziny">
     <meta name="keywords" content="zestawienie, lista bajek, kino familijne bajki dla dzieci, najlepsze filmy, epoka lodowcowa, peppa, shrek, bożonarodzeniowe">
-	<meta name="author" content="Manislawa">
-    <link rel="stylesheet" href="css/reset.css">  
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+    <meta name="author" content="Manislawa">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb"
+        crossorigin="anonymous">
     <link rel="shortcut icon" href="iconVideocam.ico" type="image/x-icon">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Rubik&amp;subset=latin-ext">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Chelsea+Market&amp;subset=latin-ext">
-    
+
     <style>
-     /*for phones*/
-        @media all and (max-width: 700px)
-        {   main>article
-            {   padding-left: 30px;
-                padding-right: 30px; } }
+        #content p:first-of-type {
+            margin-top: 1rem;
+        }
+        h2 {
+            text-align: left;
+        }
     </style>
-
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>   
-    <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.17.0/dist/jquery.validate.min.js"></script>
-
 </head>
-<body> 
-        <!-- Page title -->
-   <header id="bigTitle">
-       <i class="material-icons"><a href="index.html">&#xE04B;</a></i>
-       <h1>Lista filmów i bajek <br> dla całej rodziny</h1>     
-   </header>
-       <!-- Left panel -->
-   <div id="mainHeader" class="clearfix">    
-       <aside id="leftBar">
 
-            <a href="index.html">
-                <div id="logo">
-                    <p>
-                        www<span>FilmoPorada</span>.pl
-                    </p>
-                </div>
-            </a>
+<body>
+    <!-- PAGE TITLE -->
+    <header id="bigTitle" class="flexContainer">
+        <h1 class="centering">
+            Lista filmów i bajek
+            <br> dla rodziny
+        </h1>
+        <div>
+            <i class="material-icons">
+                <a href="index.html">&#xE04B;</a>
+            </i>
+        </div>
+    </header>
 
-            <nav id="sideNav">
-                <p> Kategorie filmów</p>
-                <div id="accordionNav"> 
-                    <h6 class="accHeader"> 
-                        Familijne 
-                    </h6>                                               
-                    <ul class="accContent"> 
-                        <li><a href='family-films.html'>filmy</a></li> 
-                        <li><a href='galery.html#familyGalery'>galeria</a></li> 
-                    </ul> 
+    <!-- STICKY MENU -->
+    <nav id="topMenu" class="flexContainer">
+        <!-- Logo -->
+        <a id="logo" href="index.html" class="centering">
+            <p class="centering">
+                www
+                <span>FilmoPorada</span>.pl
+            </p>
+        </a>
 
-                    <h6 class="accHeader"> 
-                        Dla Maluchów 
-                    </h6>                                               
-                    <ul class="accContent"> 
-                        <li><a href='kids-films.html'>filmy</a></li> 
-                        <li><a href='galery.html#kidsGalery'>galeria</a></li> 
-                    </ul> 
+        <!-- Dropdown Menu -->
+        <ul id="dropDownMenu" class="menu flexContainer">
+            <li>
+                <i class="material-icons">
+                    <a href="index.html">&#xE88A;</a>
+                </i>
+            </li>
+            <li>
+                <a class="centering" href="#">Kategorie</a>
+                <ul>
+                    <li>
+                        <a href='family-films.html'>Familijne</a>
+                    </li>
+                    <li>
+                        <a href='kids-films.html'>Dla Maluchów</a>
+                    </li>
+                    <li>
+                        <a href='senior-children-films.html'>Dla Starszaków</a>
+                    </li>
+                    <li>
+                        <a href='special-occasions-films.html'>Specjalne okazje</a>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <a class="centering" href="galery.html">Galeria</a>
+            </li>
+            <li>
+                <a class="centering" href="contact.html">Kontakt</a>
+            </li>
+        </ul>
+        <!-- Menu phone icon -->
+        <a href="#" class="centering menu-icon">
+            <i class="material-icons">&#xE5D2;</i>
+        </a>
+    </nav>
 
-                    <h6 class="accHeader"> 
-                            Dla Starszaków 
-                    </h6>                                               
-                    <ul class="accContent"> 
-                        <li><a href='senior-children-films.html'>filmy</a></li> 
-                        <li><a href='galery.html#seniorChildrenGalery'>galeria</a></li> 
-                    </ul> 
-
-                    <h6 class="accHeader"> 
-                        Specjalne okazje 
-                    </h6>                                               
-                    <ul class="accContent"> 
-                        <li><a href='special-occasions-films.html#christmasFilms'>Bozonarodzeniowe</a></li> 
-                        <li><a href='special-occasions-films.html#danceFilms'>taneczne</a></li> 
-                        <li><a href='special-occasions-films.html#easterFilms'>wielkanocne</a></li>
-                    </ul> 
-                </div>
-            </nav>
-
-            <aside id="quotation">
-                <p id="citation">
-                    <q>Kto powiedział że musimy dorosnąć?</q> 
-                    <cite>Walt Disney</cite>
+    <!-- MAIN CONTENT -->
+    <main class="flexContainer">
+        <!-- Content section  -->
+        <section id="content">
+            <!-- Introduction -->
+            <header>
+                <h2>Formularz kontaktowy</h2>
+                <p>
+                    Masz jakieś pytania? Chcesz zgłosić uwagi? A może masz ciekawą propozycję na kino dla dzieci i chcesz się nią podzielić?
                 </p>
-            </aside>
-       </aside> 
-           <!-- Sticky Menu -->           
-       <nav id="topMenu">
-            <a href="#" class="menu-icon"><i class="material-icons">&#xE5D2;</i></a>
-            <ul id="dropDownMenu" class="menu clearfix">
-                <li>
-                    <i class="material-icons"><a href="index.html">&#xE88A;</a></i>   
-                </li>
-                <li>
-                   <a href="#">Kategorie</a>
-                   <ul> 
-                       <li><a href='family-films.html'>Familijne</a></li> 
-                       <li><a href='kids-films.html'>Dla Maluchów</a></li>
-                       <li><a href='senior-children-films.html'>Dla Starszaków</a></li> 
-                       <li><a href='special-occasions-films.html'>Specjalne okazje</a></li>  
-                   </ul> 
-               </li>
-               <li>
-                   <a href="galery.html">Galeria</a>
-               </li>
-               <li>
-                   <a href="contact.html">Kontakt</a>
-               </li>
-           </ul>
-       </nav>
-   </div>
-        <!-- Main content -->
-   <main> 
-        <article>
-            <h2>Formularz kontaktowy</h2>
-            <p>
-                Masz jakieś pytania? Chcesz zgłosić uwagi? A może masz ciekawą propozycję na kino dla dzieci i chcesz się nią podzielić?
-            </p>
-            <p>
-                Wypełnij poniższy formularz kontaktowy! 
-            </p>
+                <p>
+                    Wypełnij poniższy formularz kontaktowy!
+                </p>
+            </header>
+
+            <!-- form contact -->
             <div class="container-fluid">
                 <div class="row">
                     <div class="col-xl-12">
                         <div id="summary"></div>
                         <form id="form">
-                            <fieldset class="form-group">           
+                            <!-- the purpose of the form -->
+                            <fieldset class="form-group">
                                 <div class="col-form-label">W jakim celu sie kontaktujesz:</div>
-                                    <div class="row">
-                                        <div class="col-sm-6 offset-sm-3">
-                                    
-                                            <div class="form-check">
-                                                <input class="form-check-input" type="radio" name="radios" id="radio1">
-                                                <label class="form-check-label" for="radio1">
-                                                    Mam pytanie
-                                                </label>
-                                            </div>
-                                            
-                                            <div class="form-check">
-                                                <input class="form-check-input" type="radio" name="radios" id="radio2">
-                                                <label class="form-check-label" for="radio2">
-                                                    Zgłaszam uwagi
-                                                </label>
-                                            </div>
-                                            
-                                            <div class="form-check">
-                                                <input class="form-check-input" type="radio" name="radios" id="radio3">
-                                                <label class="form-check-label" for="radio3">
-                                                    Znam świetną bajkę/film dla dzieci
-                                                </label>
-                                            </div>
-                                            
-                                            <div class="form-check">
-                                                <input class="form-check-input" type="radio" name="radios" id="radio4">
-                                                <label class="form-check-label" for="radio4">
-                                                    Inny
-                                                </label>
-                                            </div>         
+                                <div class="row">
+                                    <div class="col-sm-6 offset-sm-3">
+
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="radios" id="radio1">
+                                            <label class="form-check-label" for="radio1">
+                                                Mam pytanie
+                                            </label>
+                                        </div>
+
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="radios" id="radio2">
+                                            <label class="form-check-label" for="radio2">
+                                                Zgłaszam uwagi
+                                            </label>
+                                        </div>
+
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="radios" id="radio3">
+                                            <label class="form-check-label" for="radio3">
+                                                Znam świetną bajkę/film dla dzieci
+                                            </label>
+                                        </div>
+
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="radios" id="radio4">
+                                            <label class="form-check-label" for="radio4">
+                                                Inny
+                                            </label>
                                         </div>
                                     </div>
+                                </div>
                             </fieldset>
 
+                            <!-- personal data -->
                             <div class="form-group row">
                                 <label for="name" class="col-sm-3 col-form-label">Imię</label>
                                 <div class="col-sm-9">
                                     <input type="text" class="form-control form-control" name="name" id="name" placeholder="Wpisz swoje imię">
                                 </div>
                             </div>
-
                             <div class="form-group row">
                                 <label for="email" class="col-sm-3 col-form-label">Email</label>
                                 <div class="col-sm-9">
-                                <input type="email" class="form-control form-control" name="email" id="email" placeholder="Wpisz swój adres email">
+                                    <input type="email" class="form-control form-control" name="email" id="email" placeholder="Wpisz swój adres email">
                                 </div>
                             </div>
 
+                            <!-- message from user -->
                             <div class="form-group row">
                                 <label for="message" class="col-sm-3 col-form-label">Wiadomość</label>
                                 <div class="col-sm-9">
-                                <textarea class="form-control form-control" id="message" rows="4" placeholder="Wpisz treść wiadomości">
-                                </textarea>
+                                    <textarea class="form-control form-control" id="message" rows="4" placeholder="Wpisz treść wiadomości">
+                                        </textarea>
                                 </div>
                             </div>
 
+                            <!-- notification of changes -->
                             <div class="form-group row">
                                 <p class="col-sm-12">Chcesz otrzymywać powiadomienia o zmianach na stronie?</p>
                                 <div class="col-sm-4 offset-sm-3">
                                     <div class="form-check">
-                                    <input class="form-check-input" type="checkbox" id="checkbox">
-                                    <label class="form-check-label" for="checkbox">
-                                        Zgadzam się
-                                    </label>
+                                        <input class="form-check-input" type="checkbox" id="checkbox">
+                                        <label class="form-check-label" for="checkbox">
+                                            Zgadzam się
+                                        </label>
                                     </div>
                                 </div>
                             </div>
 
+                            <!-- send button -->
                             <button id="send" type="submit" class="btn btn-primary">wyślij formularz</button>
-                        </form>        
+                        </form>
                     </div>
                 </div>
             </div>
-        </article>
+        </section>
 
+        <!-- Sticky Left navigation panel -->
+        <section id="sideNav">
+            <h4> Kategorie filmów</h4>
+            <nav id="accordionNav">
+                <h6 class="accHeader">
+                    Familijne
+                </h6>
+                <ul class="accContent">
+                    <li>
+                        <a href='family-films.html'>filmy</a>
+                    </li>
+                    <li>
+                        <a href='galery.html#familyGalery'>galeria</a>
+                    </li>
+                </ul>
 
+                <h6 class="accHeader">
+                    Dla Maluchów
+                </h6>
+                <ul class="accContent">
+                    <li>
+                        <a href='kids-films.html'>filmy</a>
+                    </li>
+                    <li>
+                        <a href='galery.html#kidsGalery'>galeria</a>
+                    </li>
+                </ul>
+
+                <h6 class="accHeader">
+                    Dla Starszakow
+                </h6>
+                <ul class="accContent">
+                    <li>
+                        <a href='senior-children-films.html'>filmy</a>
+                    </li>
+                    <li>
+                        <a href='galery.html#seniorChildrenGalery'>galeria</a>
+                    </li>
+                </ul>
+
+                <h6 class="accHeader">
+                    Specjalne okazje
+                </h6>
+                <ul class="accContent">
+                    <li>
+                        <a href='special-occasions-films.html#christmasFilms'>Bozonarodzeniowe</a>
+                    </li>
+                    <li>
+                        <a href='special-occasions-films.html#danceFilms'>taneczne</a>
+                    </li>
+                    <li>
+                        <a href='special-occasions-films.html#easterFilms'>wielkanocne</a>
+                    </li>
+                </ul>
+            </nav>
+
+            <!-- Extra citation  -->
+            <aside id="quotation">
+                <q>Kto powiedział że musimy dorosnąć?</q>
+                <cite>Walt Disney</cite>
+            </aside>
+        </section>
     </main>
 
+    <!-- BOTTOM FOOTER -->
     <footer id="mainFooter" class="footer">
         Copyright &copy; 2017 by Manislawa
     </footer>
 
+    <!-- SCRIPTS -->
     <script src="js/script.js"></script>
     <script src="js/validscript.js"></script>
-         
+    <script async src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script async src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh"
+        crossorigin="anonymous"></script>
+    <script async src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ"
+        crossorigin="anonymous"></script>
+    <script async src="https://cdn.jsdelivr.net/npm/jquery-validation@1.17.0/dist/jquery.validate.min.js"></script>
+
 </body>
+
 </html>

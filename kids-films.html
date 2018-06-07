@@ -17,20 +17,6 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Rubik&amp;subset=latin-ext">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Chelsea+Market&amp;subset=latin-ext">
-
-    <style>
-        h2 {
-            text-align: center;
-        }
-    </style>
-
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-        crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh"
-        crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ"
-        crossorigin="anonymous"></script>
-
 </head>
 
 <body onload="sortList()">
@@ -97,9 +83,9 @@
     <!-- MAIN CONTENT -->
     <main class="flexContainer">
         <!-- Content section  -->
-        <section id="content">
+        <div id="content">
             <!-- Name of films category -->
-            <article id="oneCategory" class="blockOfCategory">
+            <article id="oneCategory">
                 <header>
                     <h2>Filmy dla maluchów</h2>
                 </header>
@@ -155,6 +141,7 @@
                         <small>
                             Źródło: Youtube
                         </small>
+                    </div>
                 </section>
 
                 <section id="madryMaluch" class="oneFilm">
@@ -183,7 +170,7 @@
                     </div>
                 </section>
             </article>
-        </section>
+        </div>
 
         <!-- Sticky Left navigation panel -->
         <section id="sideNav">
@@ -240,12 +227,11 @@
                     </li>
                 </ul>
             </nav>
+
             <!-- Extra citation  -->
             <aside id="quotation">
-                <!-- <p id="citation"> -->
                 <q>Kto powiedział że musimy dorosnąć?</q>
                 <cite>Walt Disney</cite>
-                <!-- </p> -->
             </aside>
         </section>
 
@@ -310,6 +296,13 @@
     <!-- SCRIPTS -->
     <script src="js/sortscript.js"></script>
     <script src="js/script.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ"
+        crossorigin="anonymous"></script>
 
 </body>
+
 </html>

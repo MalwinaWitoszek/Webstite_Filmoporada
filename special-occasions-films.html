@@ -20,12 +20,13 @@
 
     <style>
         h2 {
-            text-align: center;
             padding-top: 60px;
         }
-         #christmasFilms > header > h2 {
+
+        #christmasFilms>header>h2 {
             padding-top: 0;
-        } 
+        }
+
         /*phones*/
 
         @media all and (max-width: 700px) {
@@ -34,14 +35,6 @@
             }
         }
     </style>
-
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-        crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh"
-        crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ"
-        crossorigin="anonymous"></script>
-
 </head>
 
 <body onload="sortList()">
@@ -108,9 +101,9 @@
     <!-- MAIN CONTENT -->
     <main class="flexContainer">
         <!-- Content section  -->
-        <section id="content">
+        <div id="content">
             <!-- Name of films category -->
-            <article id="christmasFilms" class="blockOfCategory">
+            <article id="christmasFilms">
                 <header>
                     <h2>Filmy na specjalne okazje - BOŻONARODZENIOWE</h2>
                 </header>
@@ -170,7 +163,7 @@
                 </section>
             </article>
             <!-- End of films category -->
-            <article id="danceFilms" class="blockOfCategory">
+            <article id="danceFilms">
                 <header>
                     <h2>Filmy na specjalne okazje - TANECZNE</h2>
                 </header>
@@ -225,7 +218,7 @@
                     </div>
                 </section>
             </article>
-            <article id="easterFilms" class="blockOfCategory">
+            <article id="easterFilms">
                 <header>
                     <h2>Filmy na specjalne okazje - WIELKANOCNE</h2>
                 </header>
@@ -255,7 +248,7 @@
                     </div>
                 </section>
             </article>
-        </section>
+        </div>
 
         <!-- Sticky Left navigation panel -->
         <section id="sideNav">
@@ -312,12 +305,11 @@
                     </li>
                 </ul>
             </nav>
+
             <!-- Extra citation  -->
             <aside id="quotation">
-                <!-- <p id="citation"> -->
                 <q>Kto powiedział że musimy dorosnąć?</q>
                 <cite>Walt Disney</cite>
-                <!-- </p> -->
             </aside>
         </section>
 
@@ -382,7 +374,12 @@
     <!-- SCRIPTS -->
     <script src="js/sortscript.js"></script>
     <script src="js/script.js"></script>
-
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>
