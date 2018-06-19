@@ -217,10 +217,15 @@ h4 {
   top: 0;
   z-index: 100;
   flex: 1;
-  width: 100vw;
+}
+.stickyLeftNav {
+  position: fixed;
+  top: 40px;
+  z-index: 100;
+  /* flex: 1; */
 }
 .stickyTopMenu + main,
-.stickySideNav + main {
+.stickyLeftNav + main {
   padding-top: 43px;
 }
 
@@ -266,7 +271,7 @@ main {
   padding-top: 2rem;
 }
 /*Leftbar */
-.stickySideNav {
+#sideNav.brr {
   position: fixed;
   top: 40px;
   z-index: 100;

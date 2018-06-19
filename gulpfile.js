@@ -1,6 +1,6 @@
 // Jeżeli wyjdzie GULP 4 to zamienić run-sequence na gulp.series !
 // INSTALACJA PLUGINÓW
-// npm install --save-dev gulp browser-sync gulp-cssmin gulp-rename gulp-autoprefixer gulp-plumber del gulp-useref gulp-if gulp-uglify gulp-imagemin run-sequence
+// npm install --save-dev gulp browser-sync gulp-cssmin gulp-rename gulp-autoprefixer gulp-plumber del gulp-if gulp-uglify gulp-imagemin run-sequence
 
 
 
@@ -12,7 +12,6 @@ var plumber = require('gulp-plumber');              // zapobiega przerywaniu zad
 var del = require("del");
 var cssmin = require('gulp-cssmin');            // minifikacja css
 var rename = require('gulp-rename');            //zmiana nazwy cssmin
-var useref = require('gulp-useref');        // konkatenacja plików js bez minifikacji
 var gulpif = require('gulp-if');            // sprawdzanie warunków
 var uglify = require('gulp-uglify');        // minifikacja plików js
 var imagemin = require('gulp-imagemin');    // kompresja obrazów
@@ -38,29 +37,10 @@ gulp.task('styles', function() {
 
 gulp.task("scripts", function() {
     return gulp.src("src/*.html")
-    .pipe(useref())
     .pipe(gulpif("*.js",uglify()))      // jeżeli plik ma rozszerzenie js, to wywołujemy uglify
     .pipe(gulp.dest("dist/"));
     })
- // w index html nalezy zgodnie ze wzorem podac:
-// przykład do USEREF - konkatenacja plików, należy dodać:
-// <html>
-//     <head>
-//         <!-- build:css css/combined.css -->                tutaj scieżka i nazwa nowego pliku
-//         <link href="css/one.css" rel="stylesheet">
-//         <link href="css/two.css" rel="stylesheet">
-//         <!-- endbuild -->
-//     </head>
-//     <body>
-//         <!-- build:js js/combined.js -->                    tutaj scieżka i nazwa nowego pliku
-//         <link href="js/one.js" rel="text/javascript">
-//         <link href="js/two.js" rel="text/javascript">
-//         <!-- endbuild -->
-//     </body>
-// </html>
 
-
-//  img
 
 gulp.task("img", function() {
     return gulp.src("dist/img/*", {      // tworzy obiekt aby pobrac pliki z bazy dist
