@@ -13,28 +13,10 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb"
         crossorigin="anonymous">
     <link rel="shortcut icon" href="img/iconVideocam.ico" type="image/x-icon">
-    <link rel="stylesheet" href="css/style.min.css">
+    <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Rubik&amp;subset=latin-ext">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Chelsea+Market&amp;subset=latin-ext">
-
-    <style>
-        h2 {
-            padding-top: 60px;
-        }
-
-        #christmasFilms>header>h2 {
-            padding-top: 0;
-        }
-
-        /*phones*/
-
-        @media all and (max-width: 700px) {
-            h2 {
-                padding-top: 0;
-            }
-        }
-    </style>
 </head>
 
 <body onload="sortList()">
@@ -103,17 +85,17 @@
         <!-- Content section  -->
         <div id="content">
             <!-- Name of films category -->
-            <article id="christmasFilms">
+            <article id="oneCategory">
                 <header>
-                    <h2>Filmy na specjalne okazje - BOŻONARODZENIOWE</h2>
+                    <h2>Filmy dla Starszaków</h2>
                 </header>
 
                 <!-- Description of one film -->
-                <section id="OpowiescWigilijnaMiki" class="oneFilm">
-                    <img class="filmPoster" src="img/opowiesc-wigilijna-miki_small.jpg" alt="plakat Opowieść wigilijna Myszki Miki">
+                <section id="ksiegaZycia" class="oneFilm">
+                    <img class="filmPoster" src="img/ksiega-zycia_small.jpg" alt="plakat Księga życia ">
                     <header class="filmTitle">
-                        <h3>Opowieść wigilijna Myszki Miki</h3>
-                        <small>(1983)</small>
+                        <h3>Księga Życia</h3>
+                        <small>(2014)</small>
                     </header>
                     <p class="filmDescription">
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit. In viverra nibh sed tellus sagittis, ac luctus leo lacinia. Curabitur
@@ -128,19 +110,19 @@
                         laoreet. Phasellus venenatis volutpat odio, sed sodales libero ultrices at. Etiam nisl felis, lacinia.
                     </p>
                     <div class="filmTrailer">
-                        <iframe src="https://www.youtube.com/embed/1b3KabIoSKc?rel=0" allowfullscreen></iframe>
+                        <iframe src="https://www.youtube.com/embed/_DXGOQ3NIQ4" allowfullscreen></iframe>
                         <small>
                             Źródło: Youtube
                         </small>
                     </div>
                 </section>
                 <!-- End of one film description -->
-                <section id="wKrzywymZwierciadle" class="oneFilm">
-                    <img class="filmPoster" src="img/w-krzywym-zwierciadle_small.jpg" alt="plakat W krzywym zwierciadle, Witaj Święty Mikołaju">
+
+                <section id="malyKsiaze" class="oneFilm">
+                    <img class="filmPoster" src="img/maly-ksiaze_small.jpg" alt="plakat Mały Książe">
                     <header class="filmTitle">
-                        <h3>W krzywym zwierciadle,
-                            <br>Witaj Święty Mikołaju</h3>
-                        <small>(1989)</small>
+                        <h3>Mały książe</h3>
+                        <small>(2015)</small>
                     </header>
                     <p class="filmDescription">
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit. In viverra nibh sed tellus sagittis, ac luctus leo lacinia. Curabitur
@@ -155,77 +137,17 @@
                         laoreet. Phasellus venenatis volutpat odio, sed sodales libero ultrices at. Etiam nisl felis, lacinia.
                     </p>
                     <div class="filmTrailer">
-                        <iframe src="https://www.youtube.com/embed/D4SIkXd3fhk?rel=0" allowfullscreen></iframe>
+                        <iframe src="https://www.youtube.com/embed/UsJeSwkJKP4?rel=0" allowfullscreen></iframe>
                         <small>
                             Źródło: Youtube
                         </small>
                     </div>
                 </section>
-            </article>
-            <!-- End of films category -->
-            <article id="danceFilms">
-                <header>
-                    <h2>Filmy na specjalne okazje - TANECZNE</h2>
-                </header>
-                <section id="mammaMia" class="oneFilm">
-                    <img class="filmPoster" src="img/mamma-mia_small.jpg" alt="plakat Mamma Mia">
+
+                <section id="przygodaWparyzu" class="oneFilm">
+                    <img class="filmPoster" src="img/przygoda-w-paryzu_small.jpg" alt="plakat Przygoda w Paryżu">
                     <header class="filmTitle">
-                        <h3>Mamma Mia</h3>
-                        <small>(2008)</small>
-                    </header>
-                    <p class="filmDescription">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. In viverra nibh sed tellus sagittis, ac luctus leo lacinia. Curabitur
-                        at justo arcu. Aliquam ipsum est, efficitur vitae auctor vitae, semper quis nunc. Pellentesque ut
-                        odio eget enim vehicula ullamcorper. Suspendisse venenatis, leo nec interdum blandit, neque enim
-                        sagittis sem, sit amet finibus massa enim vitae purus. Fusce consectetur placerat nisi eget tempor.
-                        Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nam tortor
-                        massa, gravida a imperdiet in, pretium eget lectus. Aliquam felis nisi, fermentum id ipsum sit amet,
-                        sagittis suscipit augue. Mauris ultrices justo quis interdum rutrum. Suspendisse sem tellus, congue
-                        sed felis in, accumsan posuere lacus. Vestibulum in lorem vitae dui faucibus viverra eu vel risus.
-                        Nulla euismod erat mattis, mattis lectus nec, sollicitudin elit. Phasellus consectetur ipsum eu consectetur
-                        laoreet. Phasellus venenatis volutpat odio, sed sodales libero ultrices at. Etiam nisl felis, lacinia.
-                    </p>
-                    <div class="filmTrailer">
-                        <iframe src="https://www.youtube.com/embed/7aHM8yxma-0?rel=0" allowfullscreen></iframe>
-                        <small>
-                            Źródło: Youtube
-                        </small>
-                    </div>
-                </section>
-                <section id="boogieBeebies" class="oneFilm">
-                    <img class="filmPoster" src="img/boogie-beebies_small.jpg" alt="plakat Boogie Beebies">
-                    <header class="filmTitle">
-                        <h3>Boogie Beebies</h3>
-                        <small>(2004-2014)</small>
-                    </header>
-                    <p class="filmDescription">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. In viverra nibh sed tellus sagittis, ac luctus leo lacinia. Curabitur
-                        at justo arcu. Aliquam ipsum est, efficitur vitae auctor vitae, semper quis nunc. Pellentesque ut
-                        odio eget enim vehicula ullamcorper. Suspendisse venenatis, leo nec interdum blandit, neque enim
-                        sagittis sem, sit amet finibus massa enim vitae purus. Fusce consectetur placerat nisi eget tempor.
-                        Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nam tortor
-                        massa, gravida a imperdiet in, pretium eget lectus. Aliquam felis nisi, fermentum id ipsum sit amet,
-                        sagittis suscipit augue. Mauris ultrices justo quis interdum rutrum. Suspendisse sem tellus, congue
-                        sed felis in, accumsan posuere lacus. Vestibulum in lorem vitae dui faucibus viverra eu vel risus.
-                        Nulla euismod erat mattis, mattis lectus nec, sollicitudin elit. Phasellus consectetur ipsum eu consectetur
-                        laoreet. Phasellus venenatis volutpat odio, sed sodales libero ultrices at. Etiam nisl felis, lacinia.
-                    </p>
-                    <div class="filmTrailer">
-                        <iframe src="https://www.youtube.com/embed/iHSgYLOE9rk?rel=0" allowfullscreen></iframe>
-                        <small>
-                            Źródło: Youtube
-                        </small>
-                    </div>
-                </section>
-            </article>
-            <article id="easterFilms">
-                <header>
-                    <h2>Filmy na specjalne okazje - WIELKANOCNE</h2>
-                </header>
-                <section id="hop" class="oneFilm">
-                    <img class="filmPoster" src="img/hop_small.jpg" alt="plakat Hop">
-                    <header class="filmTitle">
-                        <h3>Hop</h3>
+                        <h3>Przygoda w Paryżu</h3>
                         <small>(2011)</small>
                     </header>
                     <p class="filmDescription">
@@ -241,7 +163,59 @@
                         laoreet. Phasellus venenatis volutpat odio, sed sodales libero ultrices at. Etiam nisl felis, lacinia.
                     </p>
                     <div class="filmTrailer">
-                        <iframe src="https://www.youtube.com/embed/1XTHFgUIa7Y?rel=0" allowfullscreen></iframe>
+                        <iframe src="https://www.youtube.com/embed/R3sMvFLZU5Q?rel=0" allowfullscreen></iframe>
+                        <small>
+                            Źródło: Youtube
+                        </small>
+                    </div>
+                </section>
+
+                <section id="vaiana" class="oneFilm">
+                    <img class="filmPoster" src="img/vaiana_small.jpg" alt="plakat Vaiana Skarb oceanu">
+                    <header class="filmTitle">
+                        <h3>Vaiana Skarb Oceanu</h3>
+                        <small>(2016)</small>
+                    </header>
+                    <p class="filmDescription">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. In viverra nibh sed tellus sagittis, ac luctus leo lacinia. Curabitur
+                        at justo arcu. Aliquam ipsum est, efficitur vitae auctor vitae, semper quis nunc. Pellentesque ut
+                        odio eget enim vehicula ullamcorper. Suspendisse venenatis, leo nec interdum blandit, neque enim
+                        sagittis sem, sit amet finibus massa enim vitae purus. Fusce consectetur placerat nisi eget tempor.
+                        Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nam tortor
+                        massa, gravida a imperdiet in, pretium eget lectus. Aliquam felis nisi, fermentum id ipsum sit amet,
+                        sagittis suscipit augue. Mauris ultrices justo quis interdum rutrum. Suspendisse sem tellus, congue
+                        sed felis in, accumsan posuere lacus. Vestibulum in lorem vitae dui faucibus viverra eu vel risus.
+                        Nulla euismod erat mattis, mattis lectus nec, sollicitudin elit. Phasellus consectetur ipsum eu consectetur
+                        laoreet. Phasellus venenatis volutpat odio, sed sodales libero ultrices at. Etiam nisl felis, lacinia.
+                    </p>
+                    <div class="filmTrailer">
+                        <iframe src="https://www.youtube.com/embed/nJQ7jIxlFzU?rel=0" allowfullscreen></iframe>
+                        <small>
+                            Źródło: Youtube
+                        </small>
+                    </div>
+                </section>
+
+                <section id="kubo" class="oneFilm">
+                    <img class="filmPoster" src="img/kubo_small.jpg" alt="plakat Kubo i dwie struny">
+                    <header class="filmTitle">
+                        <h3>Kubo i dwie struny</h3>
+                        <small>(2016)</small>
+                    </header>
+                    <p class="filmDescription">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. In viverra nibh sed tellus sagittis, ac luctus leo lacinia. Curabitur
+                        at justo arcu. Aliquam ipsum est, efficitur vitae auctor vitae, semper quis nunc. Pellentesque ut
+                        odio eget enim vehicula ullamcorper. Suspendisse venenatis, leo nec interdum blandit, neque enim
+                        sagittis sem, sit amet finibus massa enim vitae purus. Fusce consectetur placerat nisi eget tempor.
+                        Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nam tortor
+                        massa, gravida a imperdiet in, pretium eget lectus. Aliquam felis nisi, fermentum id ipsum sit amet,
+                        sagittis suscipit augue. Mauris ultrices justo quis interdum rutrum. Suspendisse sem tellus, congue
+                        sed felis in, accumsan posuere lacus. Vestibulum in lorem vitae dui faucibus viverra eu vel risus.
+                        Nulla euismod erat mattis, mattis lectus nec, sollicitudin elit. Phasellus consectetur ipsum eu consectetur
+                        laoreet. Phasellus venenatis volutpat odio, sed sodales libero ultrices at. Etiam nisl felis, lacinia.
+                    </p>
+                    <div class="filmTrailer">
+                        <iframe src="https://www.youtube.com/embed/crJv8DYHzFE?rel=0" allowfullscreen></iframe>
                         <small>
                             Źródło: Youtube
                         </small>
@@ -251,68 +225,69 @@
         </div>
 
         <!-- Sticky Left navigation panel -->
-        <section id="sideNav">
-            <h4> Kategorie filmów</h4>
-            <nav id="accordionNav">
-                <h6 class="accHeader">
-                    Familijne
-                </h6>
-                <ul class="accContent">
-                    <li>
-                        <a href='family-films.html'>filmy</a>
-                    </li>
-                    <li>
-                        <a href='galery.html#familyGalery'>galeria</a>
-                    </li>
-                </ul>
+        <div id="stickyContainer">
+            <section id="sideNav">
+                <h4> Kategorie filmów</h4>
+                <nav id="accordionNav">
+                    <h6 class="accHeader">
+                        Familijne
+                    </h6>
+                    <ul class="accContent">
+                        <li>
+                            <a href='family-films.html'>filmy</a>
+                        </li>
+                        <li>
+                            <a href='galery.html#familyGalery'>galeria</a>
+                        </li>
+                    </ul>
 
-                <h6 class="accHeader">
-                    Dla Maluchów
-                </h6>
-                <ul class="accContent">
-                    <li>
-                        <a href='kids-films.html'>filmy</a>
-                    </li>
-                    <li>
-                        <a href='galery.html#kidsGalery'>galeria</a>
-                    </li>
-                </ul>
+                    <h6 class="accHeader">
+                        Dla Maluchów
+                    </h6>
+                    <ul class="accContent">
+                        <li>
+                            <a href='kids-films.html'>filmy</a>
+                        </li>
+                        <li>
+                            <a href='galery.html#kidsGalery'>galeria</a>
+                        </li>
+                    </ul>
 
-                <h6 class="accHeader">
-                    Dla Starszakow
-                </h6>
-                <ul class="accContent">
-                    <li>
-                        <a href='senior-children-films.html'>filmy</a>
-                    </li>
-                    <li>
-                        <a href='galery.html#seniorChildrenGalery'>galeria</a>
-                    </li>
-                </ul>
+                    <h6 class="accHeader">
+                        Dla Starszakow
+                    </h6>
+                    <ul class="accContent">
+                        <li>
+                            <a href='senior-children-films.html'>filmy</a>
+                        </li>
+                        <li>
+                            <a href='galery.html#seniorChildrenGalery'>galeria</a>
+                        </li>
+                    </ul>
 
-                <h6 class="accHeader">
-                    Specjalne okazje
-                </h6>
-                <ul class="accContent">
-                    <li>
-                        <a href='special-occasions-films.html#christmasFilms'>Bozonarodzeniowe</a>
-                    </li>
-                    <li>
-                        <a href='special-occasions-films.html#danceFilms'>taneczne</a>
-                    </li>
-                    <li>
-                        <a href='special-occasions-films.html#easterFilms'>wielkanocne</a>
-                    </li>
-                </ul>
-            </nav>
+                    <h6 class="accHeader">
+                        Specjalne okazje
+                    </h6>
+                    <ul class="accContent">
+                        <li>
+                            <a href='special-occasions-films.html#christmasFilms'>Bozonarodzeniowe</a>
+                        </li>
+                        <li>
+                            <a href='special-occasions-films.html#danceFilms'>taneczne</a>
+                        </li>
+                        <li>
+                            <a href='special-occasions-films.html#easterFilms'>wielkanocne</a>
+                        </li>
+                    </ul>
+                </nav>
 
-            <!-- Extra citation  -->
-            <aside id="quotation">
-                <q>Kto powiedział że musimy dorosnąć?</q>
-                <cite>Walt Disney</cite>
-            </aside>
-        </section>
-
+                <!-- Extra citation  -->
+                <aside id="quotation">
+                    <q>Kto powiedział że musimy dorosnąć?</q>
+                    <cite>Walt Disney</cite>
+                </aside>
+            </section>
+        </div>
         <!-- Extra right side navigation for large desktop only-->
         <nav id="extraNavbar">
             <h4>Spis filmów </h4>

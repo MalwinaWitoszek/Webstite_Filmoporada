@@ -15,6 +15,9 @@ body {
 .flexContainer {
   display: flex;
 }
+#test{
+  position: relative;
+}
 .centering {
   display: flex;
   justify-content: center;
@@ -216,19 +219,16 @@ h4 {
   position: fixed;
   top: 0;
   z-index: 100;
-  flex: 1;
+  width: 100vw;
 }
 .stickyLeftNav {
   position: fixed;
   top: 40px;
   z-index: 100;
-  /* flex: 1; */
 }
-.stickyTopMenu + main,
-.stickyLeftNav + main {
-  padding-top: 43px;
+.stickyLeftNav > #quotation {
+  bottom: 0;
 }
-
 /*MAIN CONTENT */
 main {
   min-height: 540px;
@@ -257,25 +257,22 @@ main {
   margin: 0 auto;
   border-radius: 2%;
 }
-
     /*   Left SIDE PANEL WITH MENU */
-#sideNav {
-  flex: 0 0 auto;
+#stickyContainer{
   order: -1;
+  flex: 0 0 auto;
+  width: 250px;
+}
+#sideNav {
+  /* flex: 0 0 auto; */
+  /* order: -1; */
   background-color: #dfdfdf;
   width: 250px;
   min-height: calc(100vh - 165px);
-  position: relative;
+  /* position: relative; */
   align-self: flex-start;
-  z-index: 100;
+  /* z-index: 100; */
   padding-top: 2rem;
-}
-/*Leftbar */
-#sideNav.brr {
-  position: fixed;
-  top: 40px;
-  z-index: 100;
-  min-height: calc(100vh - 65px);
 }
 /*side accordion navigation */
 #accordionNav {
@@ -317,10 +314,10 @@ main {
 }
 /* extra addition */
 #quotation {
-  width: 100%;
+  width: 250px;
   max-height: 120px;
   position: absolute;
-  bottom: 0;
+  bottom: 25px;
   left: 0;
   z-index: 100;
   background-color: white;
@@ -523,10 +520,13 @@ thumbnail {
   #dropDownMenu i {
     font-size: 20px;
   }
-  .stickyTopMenu + main {
-    padding-top: 46px;
+  .stickyLeftNav {
+    top: 32px;
   }
   #sideNav {
+    width: 200px;
+  }
+  #quotation {
     width: 200px;
   }
   .filmPoster {
