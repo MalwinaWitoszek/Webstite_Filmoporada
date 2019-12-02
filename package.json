@@ -15,16 +15,16 @@
   "bugs": {
     "url": "https://github.com/Manislawa/wsb_project1/issues"
   },
-  "homepage": "https://github.com/Manislawa/wsb_project1#readme",
+  "homepage": "https://github.com/MalwinaWitoszek/wsb_project1#readme",
   "devDependencies": {
-    "browser-sync": "^2.24.4",
+    "browser-sync": "^2.26.7",
     "del": "^3.0.0",
-    "gulp": "^3.9.1",
+    "gulp": "^4.0.2",
     "gulp-autoprefixer": "^5.0.0",
     "gulp-cssmin": "^0.2.0",
     "gulp-gh-pages": "^0.5.4",
     "gulp-if": "^2.0.2",
-    "gulp-imagemin": "^4.1.0",
+    "gulp-imagemin": "^6.2.0",
     "gulp-plumber": "^1.2.0",
     "gulp-rename": "^1.2.3",
     "gulp-uglify": "^3.0.0",
