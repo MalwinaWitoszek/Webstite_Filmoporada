@@ -1,3 +1,4 @@
-wsb project 1
+# Website_Filmoporada
+My first dynamic and responsive website after 1 month of studying html,css etc.
 
-Dynamic and responsive website
+https://malwinawitoszek.github.io/Webstite_Filmoporada/
